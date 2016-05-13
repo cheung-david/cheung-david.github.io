@@ -1,0 +1,209 @@
+/* CSS Document */
+@font-face
+{
+font-family: Dredwerkz;
+src: url(DREDWERK.TTF);
+src: url(DREDWERK.ttf);
+src:url('DREDWERK.ttf')  format('truetype')
+url('DREDWERK.TTF');
+src:url('DREDWERK.TTF')  format('truetype');
+}
+
+@font-face{
+	font-family: 'Winter flakes';
+	src:url('../fonts/Winter flakes.ttf') format('truetype');
+	font-weight:bold;	
+}
+
+.core .contentbox p {
+	font-family: Dredwerkz;
+}
+.core .contentbox p {
+	color: #999;
+}
+
+.core .contentboxL p {
+	font-family: Myriad "Myriad Pro";
+	font-size:18px;
+}
+.core .contentboxL p {
+	color: #999;
+}
+
+#apDiv1 {
+	position:absolute;
+	left:100px;
+	top:58px;
+	width:116px;
+	height:26px;
+	z-index:10000;
+	font-size: 17px;
+	font-family: Dredwerkz;
+	color: #FFF;
+}
+
+#apDiv2 {
+	position:absolute;
+	left:210px;
+	top:58px;
+	width:106px;
+	height:26px;
+	z-index:10000;
+	font-size: 17px;
+	font-family: Dredwerkz;
+	color: #FFF;
+}
+
+#apDiv3 {
+	position:absolute;
+	left:662px;
+	top:57px;
+	width:106px;
+	height:26px;
+	z-index:10000;
+	font-size: 17px;
+	font-family: Dredwerkz;
+	color: #FFF;
+}
+a:link {
+	color: #FFF;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #FFF;
+}
+a:hover {
+	text-decoration: none;
+	color: #06F;
+}
+a:active {
+	text-decoration: none;
+	color: #FFF;
+}
+
+body{font-size:22px;font-family:Myriad-Pro;text-align:center;background-image:url(images/BackgroundIso.jpg);
+margin:10px auto;
+/*background-repeat:no-repeat; 750px;*/
+background-attachment:scroll;
+background-position:top;
+position:absolute;
+left:0%;
+width:100%;
+height:1170px;
+}
+
+.core{
+
+	height: 1050px;
+	position:relative;
+	top:10px;
+	width:1202px;
+	margin:auto;
+	background-image:url(images/BackgroundCore.jpg);
+	background-position:top;
+	
+}
+
+.hold{
+	width:2000px;
+	height: 500px;
+	position:absolute;
+	top:10px;
+	width:879px;
+	left:13%;
+	z-index:1;
+}
+
+.navigation{
+	width:1300px;
+	height:150px;
+	background-repeat:no-repeat;
+	background-position:top;
+	position:absolute;
+	top:10px;
+	width:876px;
+	left:15%;
+	z-index:10000;
+}
+
+
+ul,ol,li{list-style:none;}
+
+.contentbox{
+	width:1087px;
+	height:353px;
+	/*background-image:url(images/Content-Box.png);*/
+	background-repeat:no-repeat;
+	background-position:top;
+	position:absolute;
+	left:13%;
+	top:624px;
+	width:913px;
+
+	
+	
+}
+
+.contentboxL{
+	width:1087px;
+	height:353px;
+	/*background-image:url(images/Content-Box.png);*/
+	background-repeat:no-repeat;
+	background-position:top;
+	position:absolute;
+	left:15%;
+	top:150px;
+	width:913px;
+
+	
+	
+}
+
+.contentboxC{
+	width:1087px;
+	height:353px;
+	/*background-image:url(images/Content-Box.png);*/
+	background-repeat:no-repeat;
+	background-position:top;
+	position:absolute;
+	left:15%;
+	top:150px;
+	width:913px;
+font-size:36px;
+	color: #999;
+	
+}
+
+
+.thumbnail img{
+	position:relative;
+	left:22%;
+	top:-40px;
+width:100%;
+max-height:500px;
+max-width:500px;
+display: block;
+}
+
+
+.voli{
+	width:1087px;
+	height:375px;
+	/*background-image:url(images/Volibear.jpg);*/
+background-repeat:no-repeat;
+	background-position:top;
+	position:fixed;
+	left:0%;
+top:40%;
+	width:217px;
+	z-index:1000;
+
+}
+
+.fb{
+position:fixed;
+left:10%;
+top:20%;
+z-index:2000;	
+

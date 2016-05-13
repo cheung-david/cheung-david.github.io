@@ -1,0 +1,310 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<link rel="stylesheet" type="text/css" href="css/contact.css"/>
+	<link rel="stylesheet" type="text/css" href="css/set2.css" />
+		<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
+          <link rel="stylesheet" type="text/css" href="css/component.css" />
+<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/component1.css" />
+		<link rel="stylesheet" type="text/css" href="css/fxsmall.css" />
+		
+<LINK REL="Stylesheet" TYPE="text/css" HREF="modal/modal.css"> <SCRIPT TYPE="text/javascript" SRC="https://code.jquery.com/jquery-latest.pack.js"></SCRIPT> <SCRIPT>
+
+
+$(document).ready(function() {	
+
+
+	//select all the a tag with name equal to modal
+	$('a[name=modal]').click(function(e) {
+		//Cancel the link behavior
+		e.preventDefault();
+		
+		//Get the A tag
+		var id = $(this).attr('href');
+	
+		//Get the screen height and width
+		var maskHeight = $(document).height();
+		var maskWidth = $(window).width();
+	
+		//Set heigth and width to mask to fill up the whole screen
+		$('#mask').css({'width':maskWidth,'height':maskHeight});
+		
+		//transition effect		
+		$('#mask').fadeIn(500);	
+		$('#mask').fadeTo("slow",0.8);	
+	
+		//Get the window height and width
+		var winH = $(window).height();
+		var winW = $(window).width();
+              
+		//Set the popup window to center
+		$(id).css('top',  winH/2-$(id).height()/2);
+		$(id).css('left', winW/2-$(id).width()/2);
+	
+		//transition effect
+		$(id).fadeIn(2000); 
+	
+	});
+	
+	//if close button is clicked
+	$('.window .closeIcon').click(function (e) {
+		//Cancel the link behavior
+		e.preventDefault();
+		
+		$('#mask').hide();
+		$('.window').hide();
+	});		
+	
+	//if mask is clicked
+	$('#mask').click(function () {
+		$(this).hide();
+		$('.window').hide();
+	});			
+
+	$(window).resize(function () {
+	 
+ 		var box = $('#boxes .window');
+ 
+        //Get the screen height and width
+        var maskHeight = $(document).height();
+        var maskWidth = $(window).width();
+      
+        //Set height and width to mask to fill up the whole screen
+        $('#mask').css({'width':maskWidth,'height':maskHeight});
+               
+        //Get the window height and width
+        var winH = $(window).height();
+        var winW = $(window).width();
+
+        //Set the popup window to center
+        box.css('top',  winH/2 - box.height()/2);
+        box.css('left', winW/2 - box.width()/2);
+	 
+	});
+	
+});
+
+</SCRIPT> 
+        <script src="js/modernizr.custom.25376.js"></script>
+            <script src="js/modernizr.custom.js"></script> 
+			
+<title>My Gallery</title>
+</head>
+
+<body>
+
+
+<div id="perspective" class="perspective effect-rotateleft">
+
+  <div class="container">
+				<div class="wrapper">
+                <div class="top clearfix">
+                <a class="icon" href="index.html">
+                <span class="circle"> <i class="fa fa-home fa-3x"></i></span><span class="homepage-link">Portfolio Homepage</span></a>
+                </div>
+                <header class="header">
+				  <h1>David's Portfolio<span> Software Projects </span></h1>	
+					</header>
+  
+    
+  <div class="main clearfix">
+                      
+   
+  <div class="explore">
+                              <p><button id="showMenu">Menu</button></p>
+       
+		<TABLE ALIGN="CENTER" CELLPADDING="10" CLASS="small-font"> 
+			<TR> 
+			 <TD WIDTH="216">			 <A HREF="https://play.google.com/store/apps/dev?id=7636237194946058419" target="_new">
+			 
+									 <img src="img/ejicon.png" WIDTH="205" HEIGHT="150" alt="David"/>
+									 
+			 </A></TD> 
+			 <TD WIDTH="415"><FONT SIZE="+1"><B>Android - LibGDX - Elemental
+				Jumper</B></FONT><BR>Developed an open source 2D jumping game for Android using
+				Java and LibGDX as the API. Published on Google Play.</TD> 
+		  </TR> 
+		  			<TR> 
+			 <TD WIDTH="216">			 <A HREF="" NAME="modal">
+			 
+									 <img src="img/inprogress.jpg" WIDTH="205" HEIGHT="150" alt="David"/>
+									 
+			 </A></TD> 
+			 <TD WIDTH="415"><FONT SIZE="+1"><B>Android - Random Chooser</B></FONT><BR>
+			 Developed an Android app that allows users to enter choices and randomly selects one for them.
+					Option of generating X list of random numbers given a range.
+				 Ability to save and load choice list to external storage.
+				 Published on Google Play.
+
+			 </TD> 
+		  </TR>
+		  <TR> 
+			 <TD WIDTH="216" HEIGHT="150">
+			 <A HREF="#dialog1" NAME="modal">
+			  <img src="img/maze1.jpg" WIDTH="205" HEIGHT="150" alt="David"/>
+
+			 </A></TD> 
+			 <TD WIDTH="415"><FONT SIZE="+1"><B>C++ - Maze Game - SFML
+				2.3</B></FONT><BR><FONT CLASS="small-font">Developed a basic maze game using the SFML graphics library.
+				The goal is to move the cyan player to the green box. The maze is generated using a randomized depth-first search recursive backtrack
+				algorithm. The path finder is implemented using breadth first search on a grid
+				based map system.</FONT></TD> 
+		  </TR> 
+		  <TR> 
+			 <TD WIDTH="216">			 <A HREF="#dialog2" NAME="modal">
+			<img src="img/ac0.jpg" WIDTH="205" HEIGHT="150" alt="David"/>
+			 </A></TD> 
+			 <TD WIDTH="415"><FONT SIZE="+1"><B>C++ -
+				Autocompleter</B></FONT><BR>Developed an efficient word auto completer using a
+				prefix tree (Trie). This program will find all auto completions in memory for
+				any given prefix.</TD> 
+		  </TR> 
+		  <TR> 
+			 <TD WIDTH="216">			 <A HREF="https://github.com/Rifdhan/free_roam" target="_new">
+			 <img src="img/inprogress.jpg" WIDTH="205" HEIGHT="150" alt="David"/>
+			 </A></TD> 
+			 <TD WIDTH="415"><FONT SIZE="+1"><B>C++ - Freeroam Game - OpenGL
+				(on-going)</B></FONT><BR>Worked with a partner to develop a 2D top-down
+				open-world game, similar to Grand Theft Auto.</TD> 
+		  </TR> 
+
+		</TABLE>
+
+                              
+                          
+                          </div> 
+                          
+	<div class="contact-head">
+		<p> Contact </p>
+		</div>
+                          <div class="project-contact">
+                          
+                          <!--<p> Email: cheung.david@hotmail.ca </p>
+                          <p> Phone number available on resume.</p> -->
+						      	                                  
+                                 <ul class="social">
+                                  <li class="linkedin"><a href="https://www.linkedin.com/in/cheungdavid1"><i class="fa fa-linkedin fa-3x"></i></a></li>
+                                  <li class="email"><a href="https://github.com/cheung-david"><i class="fa fa-github fa-3x"></i></a></li>
+                                  <li class="behance2"><a href="mailto:cheung.david@hotmail.ca"><i class="fa fa-envelope fa-2x"><BR></i></a></li>
+                                </ul>  					 
+						</div>
+                  </div>
+                          </div>
+                          </div>
+                          
+                          
+                          <nav class="outer-nav right vertical">
+				<a href="index.html" class="icon-home">Home</a>
+				<a href="page2.html" class="icon-news">Resume</a>
+				<a href="projects.html" class="icon-star">Software Projects</a>
+				<a href="gallery.html" class="icon-image">Previous Web Projects</a>
+				<!--<a href="#" class="icon-upload">Uploads</a>
+				<a href="#" class="icon-star">Favorites</a>
+				<a href="#" class="icon-mail">Messages</a>
+				<a href="#" class="icon-lock">Security</a> -->
+			</nav>
+                  
+                  
+
+
+
+	 <DIV ID="boxes2"> 
+		<DIV ID="dialog" CLASS="window">
+		<IMG CLASS="closeIcon" SRC="modal/closebox.png" WIDTH="40" HEIGHT="40"
+			BORDER="0">
+					                                <div class="project-slides">
+
+
+                              <div id="component" class="component component-small fxSlideBehind">
+		<ul class="itemwrap">
+						<li class="current"><a href="RadioLeacock/index.html" target="_new"><img src="img/radio.jpg" alt="img08"/> </a></li>
+                        <li><a href="Web/index.html" target="_new"><img src="img/tgiweb.jpg" alt="img07"/></a></li>
+                      
+                    <li><a href="Web/david/index.html" target="_new"> <img src="img/mypage.jpg" alt="img08"/> </a></li>
+					<li><a href="demopage.html" target="_new"> <img src="img/demo.jpg" alt="img09"/> </a></li>
+						
+  </ul>
+
+					<nav style="display: block;">
+                    
+					  <a class="prev" href="#"> </a>
+					  <a class="next" href="#"> </a>
+					</nav>
+
+</div>
+		  </DIV> 
+		  </div>
+		  
+		  
+		  
+		  
+		  <DIV ID="dialog1" CLASS="window">
+		  <IMG CLASS="closeIcon" SRC="modal/closebox.png" WIDTH="40" HEIGHT="40"
+			BORDER="0">
+					                                <div class="project-slides">
+
+
+                              <div id="component" class="component component-small fxSlideBehind">
+		<ul class="itemwrap">
+						<li class="current"><a href="img/maze1.jpg" target="_new"><img src="img/maze1.jpg" alt="img08"/> </a></li>
+                        <li><a href="img/maze2.jpg" target="_new"><img src="img/maze2.jpg" alt="img07"/></a></li>
+                      
+                    <li><a href="img/maze3.jpg" target="_new"> <img src="img/maze3.jpg" alt="img08"/> </a></li>
+					<li><a href="img/mazethumbnail.jpg" target="_new"> <img src="img/mazethumbnail.jpg" alt="img09"/> </a></li>
+						
+  </ul>
+
+					<nav style="display: block;">
+                    
+					  <a class="prev" href="#"> </a>
+					  <a class="next" href="#"> </a>
+					</nav>
+
+</div>
+		  </DIV> 
+		  </div>
+		  
+		  
+		  
+		  
+		<DIV ID="dialog2" CLASS="window">
+		                                <div class="project-slides">
+
+
+                              <div id="component" class="component component-small fxSlideBehind">
+		<ul class="itemwrap">
+						<li class="current"><a href="img/ac0.jpg" target="_new"><img src="img/ac0.jpg" alt="ac"/> </a></li>
+                        <li><a href="img/ac1.jpg" target="_new"><img src="img/ac1.jpg" alt="img07"/></a></li>
+                      
+                    <li><a href="img/ac2.jpg" target="_new"> <img src="img/ac2.jpg" alt="img08"/> </a></li>
+					<li><a href="img/ac3.jpg" target="_new"> <img src="img/ac3.jpg" alt="img09"/> </a></li>
+					                    <li><a href="img/ac4.jpg" target="_new"> <img src="img/ac4.jpg" alt="img08"/> </a></li>
+					<li><a href="img/ac5.jpg" target="_new"> <img src="img/ac5.jpg" alt="img09"/> </a></li>
+					                    <li><a href="img/ac6.jpg" target="_new"> <img src="img/ac6.jpg" alt="img08"/> </a></li>
+
+  </ul>
+
+					<nav style="display: block;">
+                    
+					  <a class="prev" href="#"> </a>
+					  <a class="next" href="#"> </a>
+					</nav>
+
+</div>
+      </div> 
+	  </div>
+ 
+
+		  
+<!-- Mask to cover the whole screen -->
+		<DIV ID="mask"></DIV>  </DIV> </div>
+                  
+
+    <script src="js/classie.js"></script>
+		<script src="js/main.js"></script>
+<script src="js/menu.js"></script>
+</body>
+</html>

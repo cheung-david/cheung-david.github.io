@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Welcome To Radio Leacock!</title>
+<!-- TemplateEndEditable -->
+<link href="../RadioLeacock/style.css" type="text/css" rel="stylesheet">
+<link href="../RadioLeacock/slider.css" type="text/css" rel="stylesheet">
+<link href="../RadioLeacock/hover.css" type="text/css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript" src="../RadioLeacock/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="../RadioLeacock/jquery.flexslider-min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('#slides').slides({
+				effect: 'slide'
+			});
+		})
+	</script>
+	<script type="text/javascript">
+$(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: "fade",
+    animationLoop: true,
+    itemWidth: 210,
+    itemMargin: 5,
+    minItems: 1,
+    maxItems: 1
+  });
+});
+</script>
+<style type="text/css">
+#apDiv1 {
+	position:absolute;
+	left:160px;
+	top:29px;
+	width:205px;
+	height:13px;
+	z-index:1;
+	font-family: Dredwerkz;
+	font-size: 14px;
+	color: #FFF;
+}
+
+#apDiv2 {
+	position:absolute;
+	left:240px;
+	top:29px;
+	width:285px;
+	height:13px;
+	z-index:1;
+	font-family: Dredwerkz;
+	font-size: 14px;
+	color: #FFF;
+}
+
+#apDiv3 {
+	position:absolute;
+	left:300px;
+	top:29px;
+	width:365px;
+	height:13px;
+	z-index:1;
+	font-family: Dredwerkz;
+	font-size: 14px;
+	color: #FFF;
+}
+
+#apDiv4 {
+	position:absolute;
+	left:291px;
+	top:29px;
+	width:425px;
+	height:13px;
+	z-index:1;
+	font-family: Dredwerkz;
+	font-size: 14px;
+	color: #FFF;
+}
+
+#apDiv5 {
+	position:absolute;
+	left:480px;
+	top:29px;
+	width:425px;
+	height:13px;
+	z-index:1;
+	font-family: Dredwerkz;
+	font-size: 14px;
+	color: #FFF;
+}
+
+</style>
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+
+<body>
+<div class="Core">
+<div class="Core">
+<div class="Navigation"><img src="../RadioLeacock/Images/Navigation.png" border="0" usemap="#Map"/>
+<div id="apDiv1">HOME</div>
+<div id="apDiv2">ABOUT</div>
+<div id="apDiv4">THE CREW</div>
+<div id="apDiv5">COMMENT+CONTACT</div>
+</div>
+
+<div class="Banner">
+<img src="../RadioLeacock/Images/Banner.png" border="0" usemap="#Map"/>
+</div>
+<div class="Gradient">
+<img src="../RadioLeacock/Images/Gradient.png" border="0" usemap="#Map"/></div>
+</div>
+<div class="OnAir">
+<img src="../RadioLeacock/Images/OnAir.png" border="0" usemap="#Map"/></div>
+</div>
+
+</div>
+</div>
+</body>
+</html>

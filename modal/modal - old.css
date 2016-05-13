@@ -1,0 +1,104 @@
+#mask {
+  position:absolute;
+  left:0;
+  top:0;
+  z-index:9000;
+  background-color:#000;
+  display:none;
+}
+
+
+/* mutual funds */
+
+  
+#boxes .window {
+  position:fixed;
+  left:0;
+  top:0;
+  /*margin: auto;*/
+  margin-left: -30px;
+	margin-top: 50px;		
+  min-width: 880px; 
+  min-height:600px;
+  width:71%;
+  height:60%;
+  display:none;
+  z-index:9999;
+  padding:20px;
+
+}
+
+#boxes #dialog {
+width: fit-content;	
+height:fit-content;	
+
+  padding:20px;
+  background-color:#ffffff;
+
+}
+
+#boxes #dialog2 {
+width: fit-content;	
+height:fit-content;	
+
+  padding:20px;
+  background-color:#ffffff;
+  
+}
+
+/* tsx funds */
+#boxes2 .window {
+  position:fixed;
+  left:0;
+  top:0;
+  /*margin: auto;*/
+  margin-left: -30px;
+  margin-top: 460px;
+  min-width: 880px; 
+  min-height:600px;
+  width:71%;
+  height:60%;
+  display:none;
+  z-index:9999;
+  padding:20px;
+
+}
+
+#boxes2 #dialog {
+width: fit-content;	
+height:fit-content;	
+
+  padding:20px;
+  background-color:#ffffff;
+
+}
+
+#boxes2 #dialog2 {
+width: fit-content;	
+height:fit-content;	
+
+  padding:20px;
+  background-color:#ffffff;
+
+}
+
+
+
+
+.wrapper {
+    position: absolute;
+    left: 50%; top: 50%; /*move the object to the center of the parent object*/
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    /*these 5 settings change the base (or registration) point of the wrapper object to it's own center - so we align child center with parent center*/
+}
+
+.closeIcon
+{
+	position: absolute;
+	left: 102%;
+	top: 5%;
+}
