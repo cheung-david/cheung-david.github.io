@@ -8,7 +8,7 @@ searchApp.controller("searchCtrl", function($scope){
 			redirect: true,
 			hint: "JS, JavaScript, Java",
 			img:"https://lh3.googleusercontent.com/j_KjS-t5LUZRMr2bHNONyYZFElXCuf3Nm6w-nc8UwQhTGZH8FPm07UWkDO9eldTuLrE=w300-rw",
-			imgURL: "https://play.google.com/store/apps/details?id=com.dc.scribe",
+			imgURL: "http://scriber.me",
 			content:`An image sharing social network designed for mobile and web
 						- Architect and built the entire mobile and web infrastructure
 						- Implemented the REST API backend with NodeJS/Express and the
